@@ -1,0 +1,20 @@
+<div class="dashboard__create-board" *ngIf="creatingBoard">
+    <div class="dashboard__create-board__form">
+        <h2 class="dashboard__create-board__form__title">Creating Board</h2>
+        <input class="dashboard__create-board__input" type="text" placeholder="Insert the board name" [(ngModel)]="newBoard.name" (keyup)="checkInput()"/>
+        <button class="dashboard__create-board__cancel" (click)="cancelCreateBoard()">Cancel</button >
+        <button class="dashboard__create-board__save" [disabled]="!inputValid" (click)="saveBoard()">Save</button>
+    </div>
+</div>
+<main class="dashboard">
+    <div class="dashboard__search">
+        <input class="dashboard__search__input" type="text" placeholder="Search Board" [(ngModel)]="filter" (keyup)="filterBoards()"/>    
+    </div>
+    <div class="dashboard__container"> 
+        <div class="dashboard__container__board--button" (click)="addBoard()">
+            <fa-icon class="dashboard__container__board__button" [icon]="faPlusSquare"></fa-icon>
+            <p class="dashboard__container__board__label">Create a New Board</p>
+        </div>
+        <app-board *ngFor="let board of boards" [board]="board"></app-board>
+    </div>
+</main>

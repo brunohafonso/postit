@@ -1,0 +1,27 @@
+.top-container {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #ff5722;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+
+.top-container__logo-container__link {
+    text-decoration: none;   
+}
+
+.top-container__logo-container__link__logo {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: auto;
+}

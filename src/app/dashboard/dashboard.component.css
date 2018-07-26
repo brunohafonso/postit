@@ -1,0 +1,122 @@
+.dashboard {
+    background: #fff3e0;
+    min-height: calc(100% - 50px);
+    padding: 2em;
+    width: 100%;
+}
+
+.dashboard__create-board {
+    align-items: flex-start;
+    background: rgba(0, 0, 0, .2);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding-top: 35px;
+    position: fixed;
+    width: 100%;
+}
+
+.dashboard__create-board__form {
+    background: #fff;
+    border-radius: 4px;
+    padding: 25px 10px;
+    text-align: center;
+    width: 350px;
+}
+
+.dashboard__create-board__form__title {
+    margin: 10px auto;
+}
+
+.dashboard__create-board__input {
+    border: 0px solid #000;
+    border-bottom: 1px solid #82807e;
+    height: 35px;
+}
+
+.dashboard__create-board__input:focus {
+    border-color: #ff5722;
+    outline-width: 0;
+}
+
+.dashboard__create-board__cancel {
+    background: #d9534f;
+    border: 1px solid #d43f3a;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+}
+
+.dashboard__create-board__save {
+    background: #398439;
+    border: 1px solid #255625;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+}
+
+.dashboard__create-board__save:disabled {
+    opacity: 0.7;
+}
+
+.dashboard__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 65%;
+}
+
+.dashboard__search {
+    margin: auto;
+    width: 65%;   
+}
+
+.dashboard__search__input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #82807e;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 7px; 
+    background-repeat: no-repeat;
+    background-image: url("assets/loupe.png");
+    padding: 10px 18px 10px 38px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.dashboard__search__input:focus {
+    border-color: #ff5722;
+    outline-width: 0;
+}
+
+.dashboard__container__board--button {
+    align-items: center;
+    background: #82807e;
+    border-radius: 4px;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+    height: 200px;
+    width: 200px;
+}
+
+.dashboard__container__board--button:hover {
+    background: #6B6960;
+}
+
+.dashboard__container__board__button {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.dashboard__container__board__label {
+    color: #fff;
+}
