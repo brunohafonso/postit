@@ -5,6 +5,7 @@ import { PostitBoardComponent } from './postit-board/postit-board.component';
 
 const ROUTES: Routes = [
     { path: '', component: DashboardComponent },
+    { path: 'delete', component: DashboardComponent },
     { path: ':id', component: PostitBoardComponent }
 ];
 

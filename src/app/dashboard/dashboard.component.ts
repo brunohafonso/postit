@@ -58,6 +58,10 @@ export class DashboardComponent implements OnInit {
     this.creatingBoard = false;
   }
   
+  updateBoards(boards: Board[]) {
+    this.boards = boards;
+  }
+  
   // metodo que esconde o input
   cancelCreateBoard() {
     this.creatingBoard = false;

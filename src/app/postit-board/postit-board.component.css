@@ -1,0 +1,9 @@
+.postit-container {
+   background: #fff3e0;
+   display: flex;
+   flex-wrap: wrap;
+   min-height: calc(100% - 50px);
+   overflow: auto;
+   padding: 2em;
+   width: 100%;
+}

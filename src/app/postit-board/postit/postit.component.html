@@ -1,0 +1,4 @@
+<div class="postit" [ngStyle]="{ background: postit.color }" [position]="{ x: postit.positionTop, y: postit.positionLeft }" ngDraggable>
+  <input type="text" maxlength="35" class="postit__title" [value]="postit.title"/>
+  <textarea class="postit__text-content" maxlength="200" [value]="postit.content"></textarea> 
+</div>

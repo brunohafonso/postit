@@ -11,7 +11,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BoardComponent } from './dashboard/board/board.component';
 import { ROUTES } from './app.routes';
 import { DashboardService } from './dashboard/dashboard.service';
+import { BoardService } from './dashboard/board/board.service';
 import { PostitBoardComponent } from './postit-board/postit-board.component';
+import { PostitComponent } from './postit-board/postit/postit.component';
+import { PostitBoardService } from './postit-board/postit-board.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,7 @@ import { PostitBoardComponent } from './postit-board/postit-board.component';
     DashboardComponent,
     BoardComponent,
     PostitBoardComponent,
-    
+    PostitComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,7 @@ import { PostitBoardComponent } from './postit-board/postit-board.component';
     RouterModule.forRoot(ROUTES),
     AngularDraggableModule
   ],
-  providers: [DashboardService],
+  providers: [DashboardService, BoardService, PostitBoardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

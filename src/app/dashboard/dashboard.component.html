@@ -15,6 +15,6 @@
             <fa-icon class="dashboard__container__board__button" [icon]="faPlusSquare"></fa-icon>
             <p class="dashboard__container__board__label">Create a New Board</p>
         </div>
-        <app-board *ngFor="let board of boards" [board]="board"></app-board>
+        <app-board *ngFor="let board of boards" [board]="board" (updatedBoards)="updateBoards($event)"></app-board>
     </div>
 </main>

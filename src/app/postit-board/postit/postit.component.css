@@ -1,0 +1,31 @@
+.postit {
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    margin: 15px;
+    min-height: 200px; 
+    width: 220px;
+}
+
+.postit__title {
+   background: transparent;
+   border-width: 0;
+   font-weight: bold;
+   margin: 10px 5% auto 5%;
+   min-height: 35px;
+   width: 90%; 
+}
+
+.postit__title:focus {
+    outline: none;
+}
+
+.postit__text-content {
+    background: transparent;
+    border-width: 0;
+    margin: 5px 5% auto 5%;
+    min-height: 170px;
+    width: 90%;
+}
+
+.postit__text-content:focus {
+    outline: none;
+}

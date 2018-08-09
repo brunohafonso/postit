@@ -1,6 +1,10 @@
-<a class="dashboard__container__board" [routerLink]="[board.id]">
-    <p class="dashboard__container__board__title">
+<a class="dashboard__container__board">
+    <p class="dashboard__container__board__title" [routerLink]="board.id">
       {{ board.name }}
-    </p>  
+    </p>
+    <hr class="dashboard__container__board__line"/>
+    <div class="dashboard__container__board__controls">
+      <fa-icon class="dashboard__container__board__controls__delete" [icon]="faTrashAlt" (click)="deleteBoard(board)"></fa-icon>
+    </div>
 </a>
 
